@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Builder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #222;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    form label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    form input, form textarea, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #333;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CV Builder</h1>
+  </header>
+
+  
+  <nav>
+    <a href="index.html">CV Form</a>
+    <a href="cv-display.html">View CV</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <form action="cv-display.html" method="GET">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+
+      <label for="education">Education</label>
+      <input type="text" name="education" placeholder="e.g., B.Sc. in Computer Science" required>
+
+      <label for="skills">Skills</label>
+      <textarea name="skills" rows="4" placeholder="e.g., HTML, CSS, JavaScript"></textarea>
+
+      <label for="experience">Work Experience</label>
+      <textarea name="experience" rows="4" placeholder="e.g., Software Developer at XYZ"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
